@@ -1,8 +1,5 @@
 
-import { Mail, Phone, MapPin, LinkedinIcon, GithubIcon, Send } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import { Mail, Phone, MapPin, LinkedinIcon, GithubIcon } from "lucide-react";
 
 export const Contact = () => {
   const contactInfo = [
@@ -43,7 +40,7 @@ export const Contact = () => {
 
   return (
     <section id="contact" className="py-20 bg-gradient-to-br from-blue-600 to-purple-700">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Let's Connect
@@ -55,114 +52,40 @@ export const Contact = () => {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="max-w-2xl mx-auto">
           {/* Contact Information */}
-          <div>
-            <h3 className="text-2xl font-bold text-white mb-8">Get In Touch</h3>
-            
-            <div className="space-y-6 mb-8">
-              {contactInfo.map((info) => (
+          <div className="space-y-6 mb-12">
+            {contactInfo.map((info) => (
+              <a
+                key={info.label}
+                href={info.href}
+                className="flex items-center p-6 bg-white/10 backdrop-blur-sm rounded-lg hover:bg-white/20 transition-all duration-300 group"
+              >
+                <div className="bg-white/20 p-4 rounded-lg mr-6 group-hover:bg-white/30 transition-colors">
+                  <info.icon className="text-white" size={28} />
+                </div>
+                <div>
+                  <p className="text-blue-200 text-sm font-medium">{info.label}</p>
+                  <p className="text-white font-semibold text-lg">{info.value}</p>
+                </div>
+              </a>
+            ))}
+          </div>
+          
+          {/* Social Links */}
+          <div className="text-center">
+            <h4 className="text-xl font-semibold text-white mb-6">Follow Me</h4>
+            <div className="flex justify-center space-x-6">
+              {socialLinks.map((social) => (
                 <a
-                  key={info.label}
-                  href={info.href}
-                  className="flex items-center p-4 bg-white/10 backdrop-blur-sm rounded-lg hover:bg-white/20 transition-all duration-300 group"
+                  key={social.label}
+                  href={social.href}
+                  className="bg-white/10 p-4 rounded-lg hover:bg-white/20 transition-all duration-300 hover:scale-110 group"
                 >
-                  <div className="bg-white/20 p-3 rounded-lg mr-4 group-hover:bg-white/30 transition-colors">
-                    <info.icon className="text-white" size={24} />
-                  </div>
-                  <div>
-                    <p className="text-blue-200 text-sm">{info.label}</p>
-                    <p className="text-white font-medium">{info.value}</p>
-                  </div>
+                  <social.icon className="text-white group-hover:text-blue-200" size={28} />
                 </a>
               ))}
             </div>
-            
-            <div>
-              <h4 className="text-lg font-semibold text-white mb-4">Follow Me</h4>
-              <div className="flex space-x-4">
-                {socialLinks.map((social) => (
-                  <a
-                    key={social.label}
-                    href={social.href}
-                    className="bg-white/10 p-3 rounded-lg hover:bg-white/20 transition-all duration-300 hover:scale-110"
-                  >
-                    <social.icon className="text-white" size={24} />
-                  </a>
-                ))}
-              </div>
-            </div>
-          </div>
-          
-          {/* Contact Form */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8">
-            <h3 className="text-2xl font-bold text-white mb-6">Send a Message</h3>
-            
-            <form className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-blue-200 text-sm font-medium mb-2">
-                    First Name
-                  </label>
-                  <Input 
-                    type="text" 
-                    className="bg-white/20 border-white/30 text-white placeholder-blue-200 focus:border-white"
-                    placeholder="John"
-                  />
-                </div>
-                <div>
-                  <label className="block text-blue-200 text-sm font-medium mb-2">
-                    Last Name
-                  </label>
-                  <Input 
-                    type="text" 
-                    className="bg-white/20 border-white/30 text-white placeholder-blue-200 focus:border-white"
-                    placeholder="Doe"
-                  />
-                </div>
-              </div>
-              
-              <div>
-                <label className="block text-blue-200 text-sm font-medium mb-2">
-                  Email
-                </label>
-                <Input 
-                  type="email" 
-                  className="bg-white/20 border-white/30 text-white placeholder-blue-200 focus:border-white"
-                  placeholder="john.doe@example.com"
-                />
-              </div>
-              
-              <div>
-                <label className="block text-blue-200 text-sm font-medium mb-2">
-                  Subject
-                </label>
-                <Input 
-                  type="text" 
-                  className="bg-white/20 border-white/30 text-white placeholder-blue-200 focus:border-white"
-                  placeholder="Project Collaboration"
-                />
-              </div>
-              
-              <div>
-                <label className="block text-blue-200 text-sm font-medium mb-2">
-                  Message
-                </label>
-                <Textarea 
-                  rows={5}
-                  className="bg-white/20 border-white/30 text-white placeholder-blue-200 focus:border-white resize-none"
-                  placeholder="Tell me about your project or how we can work together..."
-                />
-              </div>
-              
-              <Button 
-                type="submit"
-                className="w-full bg-white text-blue-600 hover:bg-blue-50 py-3 text-lg font-medium rounded-lg transition-colors duration-300"
-              >
-                <Send size={20} className="mr-2" />
-                Send Message
-              </Button>
-            </form>
           </div>
         </div>
         

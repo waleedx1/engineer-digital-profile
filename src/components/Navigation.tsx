@@ -16,14 +16,9 @@ export const Navigation = () => {
 
   const navItems = [
     { href: "#about", label: "About" },
-    { href: "#skills", label: "Skills" },
-    { href: "#education", label: "Education" },
-    { href: "#coursework", label: "Coursework" },
-    { href: "#experience", label: "Experience" },
     { href: "#research", label: "Research" },
-    { href: "#publications", label: "Publications" },
-    { href: "#portfolio", label: "Portfolio" },
-    { href: "#hobbies", label: "Hobbies" },
+    { href: "#experience", label: "Experience" },
+    { href: "#portfolio", label: "Projects" },
     { href: "#contact", label: "Contact" },
   ];
 
