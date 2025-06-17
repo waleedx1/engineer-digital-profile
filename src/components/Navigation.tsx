@@ -18,8 +18,12 @@ export const Navigation = () => {
     { href: "#about", label: "About" },
     { href: "#skills", label: "Skills" },
     { href: "#education", label: "Education" },
+    { href: "#coursework", label: "Coursework" },
     { href: "#experience", label: "Experience" },
+    { href: "#research", label: "Research" },
+    { href: "#publications", label: "Publications" },
     { href: "#portfolio", label: "Portfolio" },
+    { href: "#hobbies", label: "Hobbies" },
     { href: "#contact", label: "Contact" },
   ];
 
@@ -34,12 +38,12 @@ export const Navigation = () => {
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden lg:flex space-x-6">
             {navItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
+                className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium text-sm"
               >
                 {item.label}
               </a>
@@ -49,7 +53,7 @@ export const Navigation = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-md text-gray-700 hover:text-blue-600 transition-colors"
+            className="lg:hidden p-2 rounded-md text-gray-700 hover:text-blue-600 transition-colors"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -57,7 +61,7 @@ export const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden bg-white rounded-lg shadow-lg mb-4 animate-fade-in">
+          <div className="lg:hidden bg-white rounded-lg shadow-lg mb-4 animate-fade-in">
             <div className="px-4 py-2 space-y-1">
               {navItems.map((item) => (
                 <a

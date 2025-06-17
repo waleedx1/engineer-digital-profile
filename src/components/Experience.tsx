@@ -52,27 +52,25 @@ export const Experience = () => {
         </div>
         
         <div className="relative">
-          {/* Timeline line */}
-          <div className="absolute left-4 md:left-1/2 md:transform md:-translate-x-px h-full w-0.5 bg-blue-300"></div>
+          {/* Timeline line - centered */}
+          <div className="absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-blue-300 hidden lg:block"></div>
           
           {experiences.map((exp, index) => (
-            <div key={index} className={`relative flex items-center mb-12 ${
-              index % 2 === 0 ? 'md:flex-row-reverse' : ''
-            }`}>
-              {/* Timeline dot */}
-              <div className="absolute left-4 md:left-1/2 md:transform md:-translate-x-1/2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-lg z-10"></div>
+            <div key={index} className="relative mb-12">
+              {/* Timeline dot - centered */}
+              <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-lg z-10 hidden lg:block"></div>
               
               {/* Content */}
-              <div className={`ml-12 md:ml-0 md:w-1/2 ${
-                index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'
+              <div className={`lg:w-1/2 ${
+                index % 2 === 0 ? 'lg:ml-auto lg:pl-12' : 'lg:pr-12'
               }`}>
                 <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6">
                   <div className="flex items-start justify-between mb-4">
-                    <div>
+                    <div className="flex-1">
                       <h3 className="text-xl font-bold text-gray-800 mb-1">{exp.title}</h3>
                       <p className="text-blue-600 font-semibold mb-2">{exp.company}</p>
                     </div>
-                    <Briefcase className="text-blue-600 flex-shrink-0" size={24} />
+                    <Briefcase className="text-blue-600 flex-shrink-0 ml-4" size={24} />
                   </div>
                   
                   <div className="flex flex-col sm:flex-row sm:items-center text-gray-600 mb-4 space-y-1 sm:space-y-0 sm:space-x-4">
