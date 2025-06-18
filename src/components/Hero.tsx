@@ -1,6 +1,5 @@
 
-import { ArrowDown, Mail, LinkedinIcon, GithubIcon } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { ArrowDown, Mail, LinkedinIcon, GithubIcon, Youtube } from "lucide-react";
 
 export const Hero = () => {
   return (
@@ -19,23 +18,24 @@ export const Hero = () => {
           {/* Right side - Content */}
           <div className="text-center lg:text-left">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-4">
-              John <span className="text-blue-600">Smith</span>
+              Wajahat <span className="text-blue-600">Abdullah</span>
             </h1>
             
             <h2 className="text-2xl md:text-3xl text-gray-600 mb-6 font-light">
-              Electrical Engineer
+              Gold Medalist Electrical Engineer
             </h2>
             
             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
-              Passionate about designing innovative electrical systems and circuits. 
-              Specializing in power electronics, automation, and renewable energy solutions 
-              with 5+ years of industry experience.
+              Highly motivated Electrical Engineer with a strong academic background, 
+              complemented by professional and research experience. Passionate about solving 
+              complex problems with energy, enthusiasm, innovative thinking, and a mindset 
+              of continuous improvement.
             </p>
             
             {/* Social Links */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-8">
               <a 
-                href="mailto:john.smith@email.com"
+                href="mailto:wajahat.abdullah@email.com"
                 className="flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               >
                 <Mail size={20} />
@@ -54,6 +54,12 @@ export const Hero = () => {
                   className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl text-gray-700 hover:text-blue-600 transition-all duration-300 hover:scale-110"
                 >
                   <GithubIcon size={24} />
+                </a>
+                <a 
+                  href="#" 
+                  className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl text-gray-700 hover:text-red-600 transition-all duration-300 hover:scale-110"
+                >
+                  <Youtube size={24} />
                 </a>
               </div>
             </div>

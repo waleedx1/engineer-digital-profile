@@ -4,39 +4,39 @@ import { Zap, Cpu, Settings, Database, Code, Wrench } from "lucide-react";
 export const Skills = () => {
   const skillCategories = [
     {
-      title: "Power Systems",
-      icon: Zap,
-      skills: ["Power Electronics", "Motor Drives", "Grid Integration", "Power Quality", "Protection Systems"],
-      color: "from-yellow-400 to-orange-500"
-    },
-    {
-      title: "Control Systems",
-      icon: Settings,
-      skills: ["PLC Programming", "SCADA", "PID Control", "Process Automation", "Instrumentation"],
+      title: "Software Tools",
+      icon: Code,
+      skills: ["MATLAB/Simulink", "ETAP", "DigSilent PowerFactory", "ANSYS Maxwell", "CST Studio", "AutoCAD", "Multisim", "Proteus"],
       color: "from-blue-400 to-purple-500"
     },
     {
-      title: "Embedded Systems",
-      icon: Cpu,
-      skills: ["Microcontrollers", "Arduino/Raspberry Pi", "PCB Design", "Circuit Analysis", "Signal Processing"],
+      title: "Technical Skills",
+      icon: Settings,
+      skills: ["Power System Studies", "System Design", "Finite Element Analysis", "PCB Design & Fabrication", "LaTeX"],
       color: "from-green-400 to-teal-500"
     },
     {
-      title: "Software & Tools",
-      icon: Code,
-      skills: ["MATLAB/Simulink", "AutoCAD Electrical", "ETAP", "Python", "C/C++"],
+      title: "Programming",
+      icon: Cpu,
+      skills: ["C++", "MATLAB", "Embedded Systems", "Arduino", "Python (Learning)", "Machine Learning (Learning)"],
       color: "from-purple-400 to-pink-500"
     },
     {
-      title: "Design Software",
+      title: "Power Systems",
+      icon: Zap,
+      skills: ["Power Distribution", "Power System Protection", "Power Electronics", "Power Transmission", "Control Systems"],
+      color: "from-yellow-400 to-orange-500"
+    },
+    {
+      title: "Soft Skills",
       icon: Wrench,
-      skills: ["KiCad", "Altium Designer", "SolidWorks Electrical", "Proteus", "LTspice"],
+      skills: ["Self-Motivation", "Problem Solving", "Critical Thinking", "Creativity", "Attention to Detail"],
       color: "from-red-400 to-orange-500"
     },
     {
-      title: "Data & Analysis",
+      title: "Currently Learning",
       icon: Database,
-      skills: ["Data Analysis", "Machine Learning", "IoT Systems", "MQTT", "Database Design"],
+      skills: ["Python", "Machine Learning", "Optimization", "PSCAD", "PSS/E", "Advanced Power Studies"],
       color: "from-teal-400 to-blue-500"
     }
   ];

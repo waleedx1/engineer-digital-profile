@@ -1,28 +1,24 @@
 
-import { GraduationCap, Award, BookOpen } from "lucide-react";
+import { GraduationCap, Award, BookOpen, ExternalLink } from "lucide-react";
 
 export const Education = () => {
   const education = [
     {
-      degree: "Master of Science in Electrical Engineering",
-      school: "Stanford University",
-      year: "2018-2020",
-      gpa: "3.8/4.0",
-      focus: "Power Electronics & Renewable Energy"
-    },
-    {
       degree: "Bachelor of Science in Electrical Engineering",
-      school: "University of California, Berkeley",
-      year: "2014-2018",
-      gpa: "3.7/4.0",
-      focus: "Control Systems & Signal Processing"
+      school: "University of Lahore",
+      year: "Sep 2016 - Jun 2020",
+      gpa: "3.91/4.00",
+      rank: "1st out of 200+",
+      honors: "Gold Medal • Highest Distinction",
+      verification: "WES Verified Credential"
     }
   ];
 
   const certifications = [
-    "Professional Engineer (PE) License - California",
-    "Certified Energy Manager (CEM)",
-    "PMP - Project Management Professional"
+    "Registered Engineer with PEC under Washington Accord (ELECT/86064)",
+    "Advanced Power System Protection – iMentors (April 2025)",
+    "Substation Design using DIgSILENT PowerFactory – iMentors (May 2025)",
+    "The Complete Electrical Power with ETAP & Manual Analysis – Udemy (Ongoing)"
   ];
 
   return (
@@ -52,9 +48,16 @@ export const Education = () => {
                     <span>{edu.year}</span>
                     <span>GPA: {edu.gpa}</span>
                   </div>
-                  <p className="text-gray-700">
-                    <strong>Focus:</strong> {edu.focus}
+                  <p className="text-gray-700 mb-2">
+                    <strong>Class Rank:</strong> {edu.rank}
                   </p>
+                  <p className="text-gray-700 mb-2">
+                    <strong>Honors:</strong> {edu.honors}
+                  </p>
+                  <div className="flex items-center text-blue-600">
+                    <ExternalLink size={16} className="mr-2" />
+                    <span className="text-sm">{edu.verification}</span>
+                  </div>
                 </div>
               ))}
             </div>
@@ -64,7 +67,7 @@ export const Education = () => {
           <div>
             <h3 className="text-2xl font-bold text-gray-800 mb-8 flex items-center">
               <Award className="mr-3 text-blue-600" size={28} />
-              Certifications
+              Certifications & Training
             </h3>
             
             <div className="space-y-4">
@@ -74,14 +77,6 @@ export const Education = () => {
                   <span className="text-gray-700">{cert}</span>
                 </div>
               ))}
-            </div>
-            
-            <div className="mt-8 p-6 bg-gradient-to-r from-yellow-50 to-orange-50 rounded-lg">
-              <h4 className="text-lg font-bold text-gray-800 mb-3">Continuing Education</h4>
-              <p className="text-gray-700">
-                Regularly attending workshops, conferences, and online courses to stay current 
-                with the latest technologies in electrical engineering, renewable energy, and automation.
-              </p>
             </div>
           </div>
         </div>

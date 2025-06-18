@@ -4,56 +4,28 @@ import { BookOpen, Calculator, Zap, Cpu } from "lucide-react";
 export const Coursework = () => {
   const courseworkCategories = [
     {
-      category: "Core Electrical Engineering",
+      category: "Power Systems",
       icon: Zap,
       courses: [
-        "Circuit Analysis I & II",
-        "Electronics I & II",
-        "Digital Logic Design",
-        "Signals and Systems",
-        "Electromagnetic Fields",
-        "Power Systems Analysis"
+        "Power Distribution and Utilization",
+        "Power System Protection", 
+        "Power System Analysis",
+        "Power Electronics",
+        "Electrical Power Transmission"
       ],
       color: "from-blue-500 to-blue-600"
     },
     {
-      category: "Power & Energy Systems",
+      category: "Control Systems",
       icon: Calculator,
       courses: [
-        "Power Electronics",
-        "Electric Machines",
-        "Renewable Energy Systems",
-        "Power System Protection",
-        "Smart Grid Technology",
-        "Energy Storage Systems"
+        "Control Systems",
+        "Control of DC and AC Drives",
+        "Embedded Systems",
+        "Digital Signal Processing",
+        "Process Control"
       ],
       color: "from-green-500 to-green-600"
-    },
-    {
-      category: "Control & Automation",
-      icon: Cpu,
-      courses: [
-        "Control Systems Engineering",
-        "Digital Control Systems",
-        "Industrial Automation",
-        "Robotics Fundamentals",
-        "Process Control",
-        "System Identification"
-      ],
-      color: "from-purple-500 to-purple-600"
-    },
-    {
-      category: "Mathematics & Programming",
-      icon: BookOpen,
-      courses: [
-        "Advanced Calculus",
-        "Linear Algebra",
-        "Probability and Statistics",
-        "Numerical Methods",
-        "C/C++ Programming",
-        "MATLAB/Simulink"
-      ],
-      color: "from-orange-500 to-orange-600"
     }
   ];
 
@@ -70,7 +42,7 @@ export const Coursework = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {courseworkCategories.map((category, index) => (
             <div 
               key={category.category}

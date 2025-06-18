@@ -1,33 +1,34 @@
 
-import { Microscope, Calendar, MapPin, Trophy } from "lucide-react";
+import { Microscope, Calendar, Trophy } from "lucide-react";
 
 export const Research = () => {
   const researchProjects = [
     {
-      title: "Smart Grid Optimization Using Machine Learning",
-      institution: "Stanford University - Power Systems Lab",
-      period: "Sep 2019 - May 2020",
-      supervisor: "Dr. Sarah Johnson",
-      description: "Developed machine learning algorithms to optimize power distribution in smart grid networks, focusing on renewable energy integration and load balancing.",
+      title: "Design and Development of Resistance Butt Welding Machine",
+      institution: "University of Lahore - Final Year Project",
+      period: "2019 - 2020",
+      description: "Introduced a simplified and economical butt welding machine design suitable for local bulk production, targeting cost-sensitive manufacturing environments.",
       achievements: [
-        "Improved grid efficiency by 12% through predictive load forecasting",
-        "Published findings in IEEE Power & Energy Society Conference",
-        "Developed Python-based simulation framework adopted by 3 other research groups"
+        "Conducted comprehensive market research and literature review to assess existing technologies",
+        "Designed a high current transformer, validated through computer simulations including Finite Element Analysis",
+        "Developed a working prototype with complete mechanical structure and welding operation mechanism",
+        "Presented the work at ICEEST 2022 conference, handling manuscript writing, submission, revisions, and final presentation"
       ],
-      technologies: ["Python", "TensorFlow", "MATLAB", "Power System Simulation"]
+      technologies: ["ANSYS Maxwell", "Finite Element Analysis", "Transformer Design", "Mechanical Design"]
     },
     {
-      title: "Wireless Power Transfer for Electric Vehicles",
-      institution: "UC Berkeley - Electric Vehicle Research Center",
-      period: "Jan 2017 - Dec 2017",
-      supervisor: "Prof. Michael Chen",
-      description: "Investigated high-efficiency wireless charging systems for electric vehicles, focusing on coil design optimization and power transfer efficiency.",
+      title: "Design and Development of Solid-State DC Circuit Breaker",
+      institution: "University of Lahore - Research Project",
+      period: "2019 - 2020",
+      description: "Proposed a solid-state DC circuit breaker with low conduction loss, quick reclosing, and rebreaking capability to address control and stability challenges in DC power systems.",
       achievements: [
-        "Achieved 85% power transfer efficiency in prototype system",
-        "Designed novel coil geometry reducing electromagnetic interference by 30%",
-        "Presented research at International Conference on Wireless Power Transfer"
+        "Verified operating modes and performance through comprehensive Simulink/MATLAB simulations",
+        "Designed the breaker to interrupt and clear faults within approximately 200 µs, significantly reducing potential damage",
+        "Incorporated a recharging mechanism for the commutation capacitor, enabling rebreaking capability",
+        "Improved system protection by enabling fast operation and minimizing electrical losses",
+        "Presented research findings at ICEEST 2022 conference"
       ],
-      technologies: ["ANSYS Maxwell", "COMSOL", "PCB Design", "RF Electronics"]
+      technologies: ["MATLAB", "Simulink", "Power Electronics", "Circuit Breaker Design", "Fault Analysis"]
     }
   ];
 
@@ -40,7 +41,7 @@ export const Research = () => {
           </h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Contributing to cutting-edge research in electrical engineering and power systems
+            Contributing to innovative research in electrical engineering and power systems
           </p>
         </div>
         
@@ -54,20 +55,15 @@ export const Research = () => {
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold text-gray-800 mb-2">{project.title}</h3>
                   <p className="text-blue-600 font-semibold mb-2">{project.institution}</p>
-                  <p className="text-gray-600 mb-2">
-                    <strong>Research Supervisor:</strong> {project.supervisor}
-                  </p>
                 </div>
                 <div className="flex items-center text-blue-600 ml-4">
                   <Microscope size={32} />
                 </div>
               </div>
               
-              <div className="flex flex-col sm:flex-row sm:items-center text-gray-600 mb-4 space-y-1 sm:space-y-0 sm:space-x-4">
-                <div className="flex items-center">
-                  <Calendar size={16} className="mr-2" />
-                  {project.period}
-                </div>
+              <div className="flex items-center text-gray-600 mb-4">
+                <Calendar size={16} className="mr-2" />
+                {project.period}
               </div>
               
               <p className="text-gray-700 mb-6 leading-relaxed">{project.description}</p>

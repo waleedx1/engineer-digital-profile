@@ -6,8 +6,8 @@ import { Education } from "@/components/Education";
 import { Coursework } from "@/components/Coursework";
 import { Experience } from "@/components/Experience";
 import { Research } from "@/components/Research";
-import { Publications } from "@/components/Publications";
-import { Portfolio } from "@/components/Portfolio";
+import { ProjectPublications } from "@/components/ProjectPublications";
+import { ProjectPortfolio } from "@/components/ProjectPortfolio";
 import { Hobbies } from "@/components/Hobbies";
 import { Contact } from "@/components/Contact";
 import { Navigation } from "@/components/Navigation";
@@ -23,8 +23,8 @@ const Index = () => {
       <Coursework />
       <Experience />
       <Research />
-      <Publications />
-      <Portfolio />
+      <ProjectPublications />
+      <ProjectPortfolio />
       <Hobbies />
       <Contact />
     </div>

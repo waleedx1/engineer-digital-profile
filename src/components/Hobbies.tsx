@@ -1,48 +1,48 @@
 
-import { Camera, Gamepad2, Plane, Music, Mountain, Code2 } from "lucide-react";
+import { Youtube, Zap, TrendingUp, Heart, Mountain, Users } from "lucide-react";
 
 export const Hobbies = () => {
   const hobbies = [
     {
-      title: "Electronics Projects",
-      icon: Code2,
-      description: "Building Arduino and Raspberry Pi projects, from home automation systems to IoT devices",
+      title: "YouTube Content Creation",
+      icon: Youtube,
+      description: "Own and manage a YouTube channel with 38K+ subscribers, creating educational and engaging content",
+      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=300&fit=crop",
+      color: "from-red-500 to-red-600"
+    },
+    {
+      title: "Emerging Technologies",
+      icon: Zap,
+      description: "Passionate about Agentic AI, LLMs, Blockchain, Smart Grids, IBRs, and Grid-Forming Inverters",
       image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop",
       color: "from-blue-500 to-blue-600"
     },
     {
-      title: "Photography",
-      icon: Camera,
-      description: "Capturing landscapes and urban architecture, with a focus on geometric patterns and lighting",
-      image: "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=400&h=300&fit=crop",
-      color: "from-purple-500 to-purple-600"
-    },
-    {
-      title: "Hiking & Outdoor Adventures",
-      icon: Mountain,
-      description: "Exploring nature trails and mountain peaks, combining physical activity with peaceful reflection",
-      image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&h=300&fit=crop",
+      title: "Entrepreneurship & Finance",
+      icon: TrendingUp,
+      description: "Exploring entrepreneurial opportunities and developing financial literacy skills",
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop",
       color: "from-green-500 to-green-600"
     },
     {
-      title: "Aviation Enthusiast",
-      icon: Plane,
-      description: "Private pilot license holder, passionate about aircraft systems and aerodynamics",
-      image: "https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=400&h=300&fit=crop",
+      title: "Personal Development",
+      icon: Heart,
+      description: "Committed to continuous learning, self-improvement, and maintaining physical fitness",
+      image: "https://images.unsplash.com/photo-1434596922112-19c563067271?w=400&h=300&fit=crop",
+      color: "from-purple-500 to-purple-600"
+    },
+    {
+      title: "Outdoor Exploration",
+      icon: Mountain,
+      description: "Enjoying outdoor activities and exploring nature for inspiration and relaxation",
+      image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&h=300&fit=crop",
       color: "from-orange-500 to-orange-600"
     },
     {
-      title: "Music Production",
-      icon: Music,
-      description: "Creating electronic music and experimenting with synthesizers and audio engineering",
-      image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=300&fit=crop",
-      color: "from-red-500 to-red-600"
-    },
-    {
-      title: "Gaming & Technology",
-      icon: Gamepad2,
-      description: "PC gaming enthusiast and hardware builder, staying current with latest tech innovations",
-      image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400&h=300&fit=crop",
+      title: "Professional Networking",
+      icon: Users,
+      description: "Building meaningful connections and contributing to the professional engineering community",
+      image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=400&h=300&fit=crop",
       color: "from-indigo-500 to-indigo-600"
     }
   ];
@@ -56,7 +56,7 @@ export const Hobbies = () => {
           </h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Beyond engineering, I pursue diverse interests that fuel creativity and maintain work-life balance
+            Beyond engineering, I pursue diverse interests that fuel creativity and personal growth
           </p>
         </div>
         
@@ -91,10 +91,10 @@ export const Hobbies = () => {
         <div className="mt-16 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-8 text-center">
           <h3 className="text-2xl font-bold text-gray-800 mb-4">Life Philosophy</h3>
           <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
-            I believe in continuous learning and maintaining a balance between technical expertise and creative expression. 
-            My diverse interests not only provide personal fulfillment but also inspire innovative approaches to engineering challenges. 
-            Whether I'm debugging code, capturing the perfect shot, or exploring mountain trails, each experience contributes to my 
-            growth as both an engineer and an individual.
+            I believe in continuous learning and maintaining a balance between technical expertise and personal interests. 
+            My diverse passions not only provide personal fulfillment but also inspire innovative approaches to engineering challenges. 
+            Whether I'm creating YouTube content, exploring emerging technologies, or engaging with the professional community, 
+            each experience contributes to my growth as both an engineer and an individual.
           </p>
         </div>
       </div>
