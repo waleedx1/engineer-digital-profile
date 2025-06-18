@@ -1,5 +1,5 @@
 
-import { ExternalLink, Github, Lightbulb, Zap, Circuit, Magnet } from "lucide-react";
+import { ExternalLink, Github, Lightbulb, Zap, Cpu, Magnet } from "lucide-react";
 
 export const ProjectPortfolio = () => {
   const projects = [
@@ -17,7 +17,7 @@ export const ProjectPortfolio = () => {
       description: "Proposed and implemented a fast, low-loss solid-state DC circuit breaker with reclosing and rebreaking capabilities, validated through simulations and hardware testing.",
       image: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=600&h=400&fit=crop",
       technologies: ["MATLAB", "Simulink", "Power Electronics", "Circuit Design"],
-      icon: Circuit,
+      icon: Cpu,
       color: "from-green-500 to-green-600",
       category: "Protection Systems"
     },
