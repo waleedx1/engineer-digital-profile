@@ -18,7 +18,7 @@ export const Hero = () => {
           {/* Right side - Content */}
           <div className="text-center lg:text-left">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-4">
-              Wajahat <span className="text-blue-600">Abdullah</span>
+              Waleed <span className="text-blue-600">Abdullah</span>
             </h1>
             
             <h2 className="text-2xl md:text-3xl text-gray-600 mb-6 font-light">
@@ -35,7 +35,7 @@ export const Hero = () => {
             {/* Social Links */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-8">
               <a 
-                href="mailto:wajahat.abdullah@email.com"
+                href="mailto:waleed.abdullah@email.com"
                 className="flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               >
                 <Mail size={20} />
